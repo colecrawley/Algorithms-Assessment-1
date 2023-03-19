@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/colecrawley/Documents/algorithms assessment 1/Algorithms_Assessment1/Algorithms_Assessment1/Algorithms_Assessment1.csproj": {}
+    "/Users/colecrawley/Projects/Algorithms-Assessment-1/algorithms assessment 1/Algorithms_Assessment1/Algorithms_Assessment1/Algorithms_Assessment1.csproj": {}
   },
   "projects": {
-    "/Users/colecrawley/Documents/algorithms assessment 1/Algorithms_Assessment1/Algorithms_Assessment1/Algorithms_Assessment1.csproj": {
+    "/Users/colecrawley/Projects/Algorithms-Assessment-1/algorithms assessment 1/Algorithms_Assessment1/Algorithms_Assessment1/Algorithms_Assessment1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/colecrawley/Documents/algorithms assessment 1/Algorithms_Assessment1/Algorithms_Assessment1/Algorithms_Assessment1.csproj",
+        "projectUniqueName": "/Users/colecrawley/Projects/Algorithms-Assessment-1/algorithms assessment 1/Algorithms_Assessment1/Algorithms_Assessment1/Algorithms_Assessment1.csproj",
         "projectName": "Algorithms_Assessment1",
-        "projectPath": "/Users/colecrawley/Documents/algorithms assessment 1/Algorithms_Assessment1/Algorithms_Assessment1/Algorithms_Assessment1.csproj",
+        "projectPath": "/Users/colecrawley/Projects/Algorithms-Assessment-1/algorithms assessment 1/Algorithms_Assessment1/Algorithms_Assessment1/Algorithms_Assessment1.csproj",
         "packagesPath": "/Users/colecrawley/.nuget/packages/",
-        "outputPath": "/Users/colecrawley/Documents/algorithms assessment 1/Algorithms_Assessment1/Algorithms_Assessment1/obj/",
+        "outputPath": "/Users/colecrawley/Projects/Algorithms-Assessment-1/algorithms assessment 1/Algorithms_Assessment1/Algorithms_Assessment1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/colecrawley/.nuget/NuGet/NuGet.Config"
