@@ -1,0 +1,15 @@
+/Users/colecrawley/Documents/algorithms assessment 1/Algorithms_Assessment1/Algorithms_Assessment1/bin/Debug/net7.0/Algorithms_Assessment1
+/Users/colecrawley/Documents/algorithms assessment 1/Algorithms_Assessment1/Algorithms_Assessment1/bin/Debug/net7.0/Algorithms_Assessment1.deps.json
+/Users/colecrawley/Documents/algorithms assessment 1/Algorithms_Assessment1/Algorithms_Assessment1/bin/Debug/net7.0/Algorithms_Assessment1.runtimeconfig.json
+/Users/colecrawley/Documents/algorithms assessment 1/Algorithms_Assessment1/Algorithms_Assessment1/bin/Debug/net7.0/Algorithms_Assessment1.dll
+/Users/colecrawley/Documents/algorithms assessment 1/Algorithms_Assessment1/Algorithms_Assessment1/bin/Debug/net7.0/Algorithms_Assessment1.pdb
+/Users/colecrawley/Documents/algorithms assessment 1/Algorithms_Assessment1/Algorithms_Assessment1/obj/Debug/net7.0/Algorithms_Assessment1.csproj.AssemblyReference.cache
+/Users/colecrawley/Documents/algorithms assessment 1/Algorithms_Assessment1/Algorithms_Assessment1/obj/Debug/net7.0/Algorithms_Assessment1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/colecrawley/Documents/algorithms assessment 1/Algorithms_Assessment1/Algorithms_Assessment1/obj/Debug/net7.0/Algorithms_Assessment1.AssemblyInfoInputs.cache
+/Users/colecrawley/Documents/algorithms assessment 1/Algorithms_Assessment1/Algorithms_Assessment1/obj/Debug/net7.0/Algorithms_Assessment1.AssemblyInfo.cs
+/Users/colecrawley/Documents/algorithms assessment 1/Algorithms_Assessment1/Algorithms_Assessment1/obj/Debug/net7.0/Algorithms_Assessment1.csproj.CoreCompileInputs.cache
+/Users/colecrawley/Documents/algorithms assessment 1/Algorithms_Assessment1/Algorithms_Assessment1/obj/Debug/net7.0/Algorithms_Assessment1.dll
+/Users/colecrawley/Documents/algorithms assessment 1/Algorithms_Assessment1/Algorithms_Assessment1/obj/Debug/net7.0/refint/Algorithms_Assessment1.dll
+/Users/colecrawley/Documents/algorithms assessment 1/Algorithms_Assessment1/Algorithms_Assessment1/obj/Debug/net7.0/Algorithms_Assessment1.pdb
+/Users/colecrawley/Documents/algorithms assessment 1/Algorithms_Assessment1/Algorithms_Assessment1/obj/Debug/net7.0/Algorithms_Assessment1.genruntimeconfig.cache
+/Users/colecrawley/Documents/algorithms assessment 1/Algorithms_Assessment1/Algorithms_Assessment1/obj/Debug/net7.0/ref/Algorithms_Assessment1.dll
