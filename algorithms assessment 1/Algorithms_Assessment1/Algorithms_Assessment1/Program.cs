@@ -7,28 +7,76 @@ class Program
         Console.WriteLine("These are all road codes\n");
 
         int[] roadnums = Array.ConvertAll(roads, int.Parse);
-        //List<int>introads = roads.Select(int.Parse).ToList();
 
-        foreach (int roadnum in roadnums)
+        /*foreach (int roadnum in roadnums)
         {
             Console.WriteLine("\n" + roadnum);
         }
+        */
 
-        var sortingmethod = new algorithms();
-        sortingmethod.Roadarray = roadnums;
+        Console.WriteLine("Enter the sorting algorithm you want to use:\n1.Bubble Sort\n2. Selection sort\n3. Insertion sort\n4. Quicksort\n5. Exit");
+        string user_input = Console.ReadLine();
 
-        var sortedroads = sortingmethod.Bubblesort();
-
-        Console.WriteLine("This is the bubble sort method\n");
-
-        int count = 0;
-        foreach (var road in sortedroads)
+        if (user_input == "1")
         {
-            Console.WriteLine(road);
-            count++;
-        }
-        Console.WriteLine("The amount of steps it took to sort this list is: " + count);
+            Console.WriteLine("You have chosen the Bubble sort method!");
 
+            var bubblesortingmethod = new bubblesort();
+            bubblesortingmethod.Roadarray = roadnums;
+
+            var bubblesortedroads = bubblesortingmethod.Bubblesort();
+
+            Console.WriteLine("\n--------------------This is the bubble sort method\n--------------------");
+
+            foreach (var road in bubblesortedroads)
+            {
+                Console.WriteLine(road + "\n");
+            }
+
+        }
+        else if (user_input == "2")
+        {
+            Console.WriteLine("You have chosen the Selection sort method!");
+
+            var selectionsortingmethod = new Selectionsort();
+            selectionsortingmethod.Roadarray = roadnums;
+
+            var selectionsortedroads = selectionsortingmethod.SelectionSort();
+            Console.WriteLine("\n--------------------This is the Selection sort method\n--------------------");
+
+            foreach (var road in selectionsortedroads)
+            {
+                Console.WriteLine(road + "\n");
+            }
+
+        }
+        else if (user_input == "3")
+        {
+            Console.WriteLine("You have chosen the Insertion sort method!");
+
+            var insertionsortingmethod = new Insertionsort();
+            var insertionsortedroads = insertionsortingmethod.insertionsort(roadnums, roadnums.Length);
+            Console.WriteLine("\n--------------------This is the Insertion sort method\n--------------------");
+
+            foreach (var road in insertionsortedroads)
+            {
+                Console.WriteLine(road + "\n");
+            }
+        }
+        else if (user_input == "4")
+        {
+            Console.WriteLine("You have chosen the Quicksort method!");
+
+            var quicksortingmethod = new Quicksort();
+            var quicksortedroads = quicksortingmethod.quicksort(roadnums, 0, roadnums.Length - 1);
+            Console.WriteLine("\n--------------------This is the Insertion sort method\n--------------------");
+
+            foreach (var road in quicksortedroads)
+            {
+                Console.WriteLine(road + "\n");
+            }
+            Console.WriteLine("The amount of steps taken for selection sort is: " + Quicksort.quickcount);
+        }
 
     }
 }
