@@ -21,6 +21,30 @@ namespace Algorithms_Assessment1
 
 			
 		}
+
+		public int[] Selectionsort()
+		{
+			var n = Roadarray.Length;
+
+			for (int i = 0; i < n - 1; i++)
+			{
+				var minimum = i;
+
+				for (int j = i + 1; j < n; j++)
+				{
+					if (Roadarray[j] < Roadarray[minimum])
+					{
+						minimum = j;
+					}
+				}
+
+				var temp = Roadarray[minimum];
+				Roadarray[minimum] = Roadarray[i];
+				Roadarray[i] = temp;
+			}
+			return Roadarray;
+		}
+
 	}
 }
 
