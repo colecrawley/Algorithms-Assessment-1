@@ -1,11 +1,11 @@
 ﻿using System;
 namespace Algorithms_Assessment1
 {
-    public class Selectionsort
+    public class reverseselectionsort
     {
         public int[]? Roadarray { get; set; }
-        public static int selectioncount = 0;
-        public int[] SelectionSort()
+        public static int reverseselectioncount = 0;
+        public int[] ReverseselectionSort()
         {
             var n = Roadarray.Length;
 
@@ -15,7 +15,7 @@ namespace Algorithms_Assessment1
 
                 for (int j = i + 1; j < n; j++)
                 {
-                    if (Roadarray[j] < Roadarray[minimum])
+                    if (Roadarray[j] > Roadarray[minimum])
                     {
                         minimum = j;
                     }
@@ -24,11 +24,10 @@ namespace Algorithms_Assessment1
                 var temp = Roadarray[minimum];
                 Roadarray[minimum] = Roadarray[i];
                 Roadarray[i] = temp;
-                selectioncount++;
+                reverseselectioncount++;
             }
-            Console.WriteLine("The amount of steps taken for selection sort is: " + selectioncount);
+            Console.WriteLine("The amount of steps taken for selection sort is: " + reverseselectioncount);
             return Roadarray;
-
         }
     }
 }

@@ -4,10 +4,9 @@ namespace Algorithms_Assessment1
 	public class bubblesort
 	{
 		public int[]? Roadarray { get; set; }
-
+		public static int bubblecount = 0;
 		public int[] Bubblesort()
 		{
-			int bubblecount = 0;
 			var n = Roadarray.Length;
 
 			for (int i = 0; i < n - 1; i++)
@@ -19,6 +18,7 @@ namespace Algorithms_Assessment1
 						Roadarray[ j + 1] = temp;
 						bubblecount++;
 					}
+			//bubblecount++;
             Console.WriteLine("\nThis is the steps for bubble sort: " + bubblecount);
 			return Roadarray;		
 		}

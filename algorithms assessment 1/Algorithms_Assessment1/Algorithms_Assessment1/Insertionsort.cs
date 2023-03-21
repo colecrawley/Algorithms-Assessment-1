@@ -3,9 +3,9 @@ namespace Algorithms_Assessment1
 {
 	public class Insertionsort
 	{
+		public static int insertioncount = 0;
 		public int[] insertionsort(int[] list, int length)
 		{
-			int insertioncount = 0;
 			for (int i = 1; i < length; i++)
 			{
 				var value = list[i];
@@ -18,10 +18,10 @@ namespace Algorithms_Assessment1
 						list[j + 1] = list[j];
 						j--;
 						list[j + 1] = value;
-						insertioncount++;
 					}
 					else flag = 1;
 				}
+				insertioncount++;
 			}
             Console.WriteLine("The amount of steps taken for selection sort is: " + insertioncount);
             return list;
