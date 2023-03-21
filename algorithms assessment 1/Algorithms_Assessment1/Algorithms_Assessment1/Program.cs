@@ -213,6 +213,30 @@ class Program
                 else if (answer == "3") // Search algorithms
                 {
 
+                    Console.WriteLine("What search algorithm do you want to use:\n1. Binary Search\n2. Linear Search\n");
+                    string search_algo = Console.ReadLine();
+
+                    if (search_algo == "1")
+                    {
+                        Console.WriteLine("You have chosen the Binary search!");
+
+                        Console.WriteLine("What value do you want to look for: ");
+                        string input = Console.ReadLine();
+                        int num_input = Int32.Parse(input);
+
+                        Console.WriteLine(binarysearch.Binarysearch(roadnums_1, num_input));
+                    }
+                    else if (search_algo == "2")
+                    {
+                        Console.WriteLine("You have chosen the Linear Search!");
+
+                        Console.WriteLine("What value do you want to look for: ");
+                        string input = Console.ReadLine();
+                        int num_input = Int32.Parse(input);
+
+                        Console.WriteLine(linearsearch.Linearsearch(roadnums_1, num_input));
+                    }
+
                 }
                 else if (answer == "4") // Exit
                 {
@@ -402,7 +426,29 @@ class Program
 
                 else if (answer == "3") // Search algorithms
                 {
+                    Console.WriteLine("What search algorithm do you want to use:\n1. Binary Search\n2. Linear Search\n");
+                    string search_algo = Console.ReadLine();
 
+                    if (search_algo == "1")
+                    {
+                        Console.WriteLine("You have chosen the Binary search!");
+
+                        Console.WriteLine("What value do you want to look for: ");
+                        string input = Console.ReadLine();
+                        int num_input = Int32.Parse(input);
+
+                        Console.WriteLine(binarysearch.Binarysearch(roadnums_2, num_input));
+                    }
+                    else if (search_algo == "2")
+                    {
+                        Console.WriteLine("You have chosen the Linear Search!");
+
+                        Console.WriteLine("What value do you want to look for: ");
+                        string input = Console.ReadLine();
+                        int num_input = Int32.Parse(input);
+
+                        Console.WriteLine(linearsearch.Linearsearch(roadnums_2, num_input));
+                    }
                 }
                 else if (answer == "4") // Exit
                 {
@@ -592,7 +638,29 @@ class Program
 
                 else if (answer == "3") // Search algorithms
                 {
+                    Console.WriteLine("What search algorithm do you want to use:\n1. Binary Search\n2. Linear Search\n");
+                    string search_algo = Console.ReadLine();
 
+                    if (search_algo == "1")
+                    {
+                        Console.WriteLine("You have chosen the Binary search!");
+
+                        Console.WriteLine("What value do you want to look for: ");
+                        string input = Console.ReadLine();
+                        int num_input = Int32.Parse(input);
+
+                        Console.WriteLine(binarysearch.Binarysearch(roadnums_3, num_input));
+                    }
+                    else if (search_algo == "2")
+                    {
+                        Console.WriteLine("You have chosen the Linear Search!");
+
+                        Console.WriteLine("What value do you want to look for: ");
+                        string input = Console.ReadLine();
+                        int num_input = Int32.Parse(input);
+
+                        Console.WriteLine(linearsearch.Linearsearch(roadnums_3, num_input));
+                    }
                 }
                 else if (answer == "4") // Exit
                 {
@@ -781,7 +849,29 @@ class Program
 
                 else if (answer == "3") // Search algorithms
                 {
+                    Console.WriteLine("What search algorithm do you want to use:\n1. Binary Search\n2. Linear Search\n");
+                    string search_algo = Console.ReadLine();
 
+                    if (search_algo == "1")
+                    {
+                        Console.WriteLine("You have chosen the Binary search!");
+
+                        Console.WriteLine("What value do you want to look for: ");
+                        string input = Console.ReadLine();
+                        int num_input = Int32.Parse(input);
+
+                        Console.WriteLine(binarysearch.Binarysearch(roadnums_4, num_input));
+                    }
+                    else if (search_algo == "2")
+                    {
+                        Console.WriteLine("You have chosen the Linear Search!");
+
+                        Console.WriteLine("What value do you want to look for: ");
+                        string input = Console.ReadLine();
+                        int num_input = Int32.Parse(input);
+
+                        Console.WriteLine(linearsearch.Linearsearch(roadnums_4, num_input));
+                    }
                 }
                 else if (answer == "4") // Exit
                 {
@@ -972,7 +1062,29 @@ class Program
 
                 else if (answer == "3") // Search algorithms
                 {
+                    Console.WriteLine("What search algorithm do you want to use:\n1. Binary Search\n2. Linear Search\n");
+                    string search_algo = Console.ReadLine();
 
+                    if (search_algo == "1")
+                    {
+                        Console.WriteLine("You have chosen the Binary search!");
+
+                        Console.WriteLine("What value do you want to look for: ");
+                        string input = Console.ReadLine();
+                        int num_input = Int32.Parse(input);
+
+                        Console.WriteLine(binarysearch.Binarysearch(roadnums_5, num_input));
+                    }
+                    else if (search_algo == "2")
+                    {
+                        Console.WriteLine("You have chosen the Linear Search!");
+
+                        Console.WriteLine("What value do you want to look for: ");
+                        string input = Console.ReadLine();
+                        int num_input = Int32.Parse(input);
+
+                        Console.WriteLine(linearsearch.Linearsearch(roadnums_5, num_input));
+                    }
                 }
                 else if (answer == "4") // Exit
                 {
@@ -1161,7 +1273,29 @@ class Program
 
                 else if (answer == "3") // Search algorithms
                 {
+                    Console.WriteLine("What search algorithm do you want to use:\n1. Binary Search\n2. Linear Search\n");
+                    string search_algo = Console.ReadLine();
 
+                    if (search_algo == "1")
+                    {
+                        Console.WriteLine("You have chosen the Binary search!");
+
+                        Console.WriteLine("What value do you want to look for: ");
+                        string input = Console.ReadLine();
+                        int num_input = Int32.Parse(input);
+
+                        Console.WriteLine(binarysearch.Binarysearch(roadnums_6, num_input));
+                    }
+                    else if (search_algo == "2")
+                    {
+                        Console.WriteLine("You have chosen the Linear Search!");
+
+                        Console.WriteLine("What value do you want to look for: ");
+                        string input = Console.ReadLine();
+                        int num_input = Int32.Parse(input);
+
+                        Console.WriteLine(linearsearch.Linearsearch(roadnums_6, num_input));
+                    }
                 }
                 else if (answer == "4") // Exit
                 {
