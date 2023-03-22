@@ -1,4 +1,6 @@
-﻿namespace Algorithms_Assessment1;
+﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+
+namespace Algorithms_Assessment1;
 class Program
 {
     static void Main(string[] args)
@@ -18,7 +20,7 @@ class Program
         int[] roadnums_5 = Array.ConvertAll(roads_5, int.Parse);
         int[] roadnums_6 = Array.ConvertAll(roads_6, int.Parse);
 
-        
+
 
         /*foreach (int item in roadnums_4)
         {
@@ -27,6 +29,7 @@ class Program
             
         }
         Console.ReadKey();*/
+
 
         int flag = 1;
 
@@ -63,6 +66,13 @@ class Program
                             Thread.Sleep(10);
                         }
                         Console.WriteLine("The amount of steps taken for Bubble sort is: " + bubblesort.bubblecount);
+                        Console.WriteLine("\nThese are every 10th value from the list:\n");
+
+                        for (int i = 0; i < bubblesortedroads.Length; i += 10)
+                        {
+                            Console.Write(bubblesortedroads[i] + ", ");
+                            Thread.Sleep(10);
+                        }
                     }
 
 
@@ -82,6 +92,13 @@ class Program
                             Thread.Sleep(10);
                         }
                         Console.WriteLine("The amount of steps taken for selection sort is: " + Selectionsort.selectioncount);
+                        Console.WriteLine("\nThese are every 10th value from the list:\n");
+
+                        for (int i = 0; i < selectionsortedroads.Length; i += 10)
+                        {
+                            Console.Write(selectionsortedroads[i] + ", ");
+                            Thread.Sleep(10);
+                        }
                     }
                     else if (user_input == "3")
                     {
@@ -97,6 +114,13 @@ class Program
                             Thread.Sleep(10);
                         }
                         Console.WriteLine("The amount of steps taken for Insertion sort is: " + Insertionsort.insertioncount);
+                        Console.WriteLine("\nThese are every 10th value from the list:\n");
+
+                        for (int i = 0; i < insertionsortedroads.Length; i += 10)
+                        {
+                            Console.Write(insertionsortedroads[i] + ", ");
+                            Thread.Sleep(10);
+                        }
                     }
                     else if (user_input == "4")
                     {
@@ -112,6 +136,13 @@ class Program
                             Thread.Sleep(10);
                         }
                         Console.WriteLine("The amount of steps taken for Quicksort sort is: " + Quicksort.quickcount);
+                        Console.WriteLine("\nThese are every 10th value from the list:\n");
+
+                        for (int i = 0; i < quicksortedroads.Length; i += 10)
+                        {
+                            Console.Write(quicksortedroads[i] + ", ");
+                            Thread.Sleep(10);
+                        }
                     }
                     else if (user_input == "5")
                     {
@@ -148,6 +179,13 @@ class Program
                             Thread.Sleep(10);
                         }
                         Console.WriteLine("The amount of steps taken for reverse bubble sort is: " + reversebubblesort.reversebubblecount);
+                        Console.WriteLine("\nThese are every 10th value from the list:\n");
+
+                        for (int i = 0; i < reversebubblesortedroads.Length - 1; i += 10)
+                        {
+                            Console.Write(reversebubblesortedroads[i] + ", ");
+                            Thread.Sleep(10);
+                        }
                     }
                     else if (reverseuser_input == "2")
                     {
@@ -165,6 +203,13 @@ class Program
                             Thread.Sleep(10);
                         }
                         Console.WriteLine("The amount of steps taken for reverse selection sort is: " + reverseselectionsort.reverseselectioncount);
+                        Console.WriteLine("\nThese are every 10th value from the list:\n");
+
+                        for (int i = 0; i < reverseselectionsortedroads.Length - 1; i += 10)
+                        {
+                            Console.Write(reverseselectionsortedroads[i] + ", ");
+                            Thread.Sleep(10);
+                        }
                     }
                     else if (reverseuser_input == "3")
                     {
@@ -180,6 +225,13 @@ class Program
                             Thread.Sleep(10);
                         }
                         Console.WriteLine("The amount of steps taken for Reverse Insertion sort is: " + Reverseinsertionsort.reverseinsertioncount);
+                        Console.WriteLine("\nThese are every 10th value from the list:\n");
+
+                        for (int i = 0; i < reverseinsertionsortedroads.Length - 1; i += 10)
+                        {
+                            Console.Write(reverseinsertionsortedroads[i] + ", ");
+                            Thread.Sleep(10);
+                        }
                     }
                     else if (reverseuser_input == "4")
                     {
@@ -195,6 +247,13 @@ class Program
                             Thread.Sleep(10);
                         }
                         Console.WriteLine("The amount of steps taken for Reverse Quicksort sort is: " + reversequicksort.reversequickcount);
+                        Console.WriteLine("\nThese are every 10th value from the list:\n");
+
+                        for (int i = 0; i < reversequicksortedroads.Length - 1; i += 10)
+                        {
+                            Console.Write(reversequicksortedroads[i] + ", ");
+                            Thread.Sleep(10);
+                        }
                     }
                     else if (reverseuser_input == "5")
                     {
@@ -233,10 +292,19 @@ class Program
                         Console.WriteLine("What value do you want to look for: ");
                         string input = Console.ReadLine();
                         int num_input = Int32.Parse(input);
+                        //int[] duplicates = linearsearch.Findduplicates(roadnums_1, num_input);
 
-                        Console.WriteLine(linearsearch.Linearsearch(roadnums_1, num_input));
+                        Console.WriteLine("The indexed location of your number is: " + linearsearch.Linearsearch(roadnums_1, num_input));
+
+                        /*foreach (var item in duplicates)
+                        {
+                            Console.WriteLine(item);
+                            Thread.Sleep(10);
+                        }*/
+
+                        //Console.WriteLine(linearsearch.Findduplicates(roadnums_1, num_input));
+                        linearsearch.Findduplicates(roadnums_1, num_input);
                     }
-
                 }
                 else if (answer == "4") // Exit
                 {
@@ -276,6 +344,13 @@ class Program
                             Thread.Sleep(10);
                         }
                         Console.WriteLine("The amount of steps taken for Bubble sort is: " + bubblesort.bubblecount);
+                        Console.WriteLine("\nThese are every 10th value from the list:\n");
+
+                        for (int i = 0; i < bubblesortedroads.Length; i += 10)
+                        {
+                            Console.Write(bubblesortedroads[i] + ", ");
+                            Thread.Sleep(10);
+                        }
                     }
 
 
@@ -295,6 +370,13 @@ class Program
                             Thread.Sleep(10);
                         }
                         Console.WriteLine("The amount of steps taken for selection sort is: " + Selectionsort.selectioncount);
+                        Console.WriteLine("\nThese are every 10th value from the list:\n");
+
+                        for (int i = 0; i < selectionsortedroads.Length; i += 10)
+                        {
+                            Console.Write(selectionsortedroads[i] + ", ");
+                            Thread.Sleep(10);
+                        }
                     }
                     else if (user_input == "3")
                     {
@@ -310,6 +392,13 @@ class Program
                             Thread.Sleep(10);
                         }
                         Console.WriteLine("The amount of steps taken for Insertion sort is: " + Insertionsort.insertioncount);
+                        Console.WriteLine("\nThese are every 10th value from the list:\n");
+
+                        for (int i = 0; i < insertionsortedroads.Length; i += 10)
+                        {
+                            Console.Write(insertionsortedroads[i] + ", ");
+                            Thread.Sleep(10);
+                        }
                     }
                     else if (user_input == "4")
                     {
@@ -325,6 +414,13 @@ class Program
                             Thread.Sleep(10);
                         }
                         Console.WriteLine("The amount of steps taken for Quicksort sort is: " + Quicksort.quickcount);
+                        Console.WriteLine("\nThese are every 10th value from the list:\n");
+
+                        for (int i = 0; i < quicksortedroads.Length; i += 10)
+                        {
+                            Console.Write(quicksortedroads[i] + ", ");
+                            Thread.Sleep(10);
+                        }
                     }
                     else if (user_input == "5")
                     {
@@ -362,6 +458,13 @@ class Program
                         }
 
                         Console.WriteLine("The amount of steps taken for reverse bubble sort is: " + reversebubblesort.reversebubblecount);
+                        Console.WriteLine("\nThese are every 10th value from the list:\n");
+
+                        for (int i = 0; i < reversebubblesortedroads.Length - 1; i += 10)
+                        {
+                            Console.Write(reversebubblesortedroads[i] + ", ");
+                            Thread.Sleep(10);
+                        }
                     }
                     else if (reverseuser_input == "2")
                     {
@@ -379,6 +482,13 @@ class Program
                             Thread.Sleep(10);
                         }
                         Console.WriteLine("The amount of steps taken for reverse selection sort is: " + reverseselectionsort.reverseselectioncount);
+                        Console.WriteLine("\nThese are every 10th value from the list:\n");
+
+                        for (int i = 0; i < reverseselectionsortedroads.Length - 1; i += 10)
+                        {
+                            Console.Write(reverseselectionsortedroads[i] + ", ");
+                            Thread.Sleep(10);
+                        }
                     }
                     else if (reverseuser_input == "3")
                     {
@@ -394,6 +504,13 @@ class Program
                             Thread.Sleep(10);
                         }
                         Console.WriteLine("The amount of steps taken for Reverse Insertion sort is: " + Reverseinsertionsort.reverseinsertioncount);
+                        Console.WriteLine("\nThese are every 10th value from the list:\n");
+
+                        for (int i = 0; i < reverseinsertionsortedroads.Length - 1; i += 10)
+                        {
+                            Console.Write(reverseinsertionsortedroads[i] + ", ");
+                            Thread.Sleep(10);
+                        }
                     }
                     else if (reverseuser_input == "4")
                     {
@@ -409,6 +526,13 @@ class Program
                             Thread.Sleep(10);
                         }
                         Console.WriteLine("The amount of steps taken for Reverse Quicksort sort is: " + reversequicksort.reversequickcount);
+                        Console.WriteLine("\nThese are every 10th value from the list:\n");
+
+                        for (int i = 0; i < reversequicksortedroads.Length - 1; i += 10)
+                        {
+                            Console.Write(reversequicksortedroads[i] + ", ");
+                            Thread.Sleep(10);
+                        }
                     }
                     else if (reverseuser_input == "5")
                     {
@@ -489,6 +613,13 @@ class Program
                             Thread.Sleep(10);
                         }
                         Console.WriteLine("The amount of steps taken for Bubble sort is: " + bubblesort.bubblecount);
+                        Console.WriteLine("\nThese are every 10th value from the list:\n");
+
+                        for (int i = 0; i < bubblesortedroads.Length; i += 10)
+                        {
+                            Console.Write(bubblesortedroads[i] + ", ");
+                            Thread.Sleep(10);
+                        }
                     }
 
 
@@ -508,6 +639,13 @@ class Program
                             Thread.Sleep(10);
                         }
                         Console.WriteLine("The amount of steps taken for selection sort is: " + Selectionsort.selectioncount);
+                        Console.WriteLine("\nThese are every 10th value from the list:\n");
+
+                        for (int i = 0; i < selectionsortedroads.Length; i += 10)
+                        {
+                            Console.Write(selectionsortedroads[i] + ", ");
+                            Thread.Sleep(10);
+                        }
                     }
                     else if (user_input == "3")
                     {
@@ -523,6 +661,13 @@ class Program
                             Thread.Sleep(10);
                         }
                         Console.WriteLine("The amount of steps taken for Insertion sort is: " + Insertionsort.insertioncount);
+                        Console.WriteLine("\nThese are every 10th value from the list:\n");
+
+                        for (int i = 0; i < insertionsortedroads.Length; i += 10)
+                        {
+                            Console.Write(insertionsortedroads[i] + ", ");
+                            Thread.Sleep(10);
+                        }
                     }
                     else if (user_input == "4")
                     {
@@ -538,6 +683,13 @@ class Program
                             Thread.Sleep(10);
                         }
                         Console.WriteLine("The amount of steps taken for Quicksort sort is: " + Quicksort.quickcount);
+                        Console.WriteLine("\nThese are every 10th value from the list:\n");
+
+                        for (int i = 0; i < quicksortedroads.Length; i += 10)
+                        {
+                            Console.Write(quicksortedroads[i] + ", ");
+                            Thread.Sleep(10);
+                        }
                     }
                     else if (user_input == "5")
                     {
@@ -574,6 +726,13 @@ class Program
                             Thread.Sleep(10);
                         }
                         Console.WriteLine("The amount of steps taken for reverse bubble sort is: " + reversebubblesort.reversebubblecount);
+                        Console.WriteLine("\nThese are every 10th value from the list:\n");
+
+                        for (int i = 0; i < reversebubblesortedroads.Length - 1; i += 10)
+                        {
+                            Console.Write(reversebubblesortedroads[i] + ", ");
+                            Thread.Sleep(10);
+                        }
                     }
                     else if (reverseuser_input == "2")
                     {
@@ -591,6 +750,13 @@ class Program
                             Thread.Sleep(10);
                         }
                         Console.WriteLine("The amount of steps taken for reverse selection sort is: " + reverseselectionsort.reverseselectioncount);
+                        Console.WriteLine("\nThese are every 10th value from the list:\n");
+
+                        for (int i = 0; i < reverseselectionsortedroads.Length - 1; i += 10)
+                        {
+                            Console.Write(reverseselectionsortedroads[i] + ", ");
+                            Thread.Sleep(10);
+                        }
                     }
                     else if (reverseuser_input == "3")
                     {
@@ -606,6 +772,13 @@ class Program
                             Thread.Sleep(10);
                         }
                         Console.WriteLine("The amount of steps taken for Reverse Insertion sort is: " + Reverseinsertionsort.reverseinsertioncount);
+                        Console.WriteLine("\nThese are every 10th value from the list:\n");
+
+                        for (int i = 0; i < reverseinsertionsortedroads.Length - 1; i += 10)
+                        {
+                            Console.Write(reverseinsertionsortedroads[i] + ", ");
+                            Thread.Sleep(10);
+                        }
                     }
                     else if (reverseuser_input == "4")
                     {
@@ -621,6 +794,13 @@ class Program
                             Thread.Sleep(10);
                         }
                         Console.WriteLine("The amount of steps taken for Reverse Quicksort sort is: " + reversequicksort.reversequickcount);
+                        Console.WriteLine("\nThese are every 10th value from the list:\n");
+
+                        for (int i = 0; i < reversequicksortedroads.Length - 1; i += 10)
+                        {
+                            Console.Write(reversequicksortedroads[i] + ", ");
+                            Thread.Sleep(10);
+                        }
                     }
                     else if (reverseuser_input == "5")
                     {
@@ -700,6 +880,13 @@ class Program
                             Thread.Sleep(1);
                         }
                         Console.WriteLine("The amount of steps taken for Bubble sort is: " + bubblesort.bubblecount);
+                        Console.WriteLine("\nThese are every 50th value from the list:\n");
+
+                        for (int i = 0; i < bubblesortedroads.Length; i += 50)
+                        {
+                            Console.Write(bubblesortedroads[i] + ", ");
+                            Thread.Sleep(1);
+                        }
                     }
 
 
@@ -719,6 +906,13 @@ class Program
                             Thread.Sleep(1);
                         }
                         Console.WriteLine("The amount of steps taken for selection sort is: " + Selectionsort.selectioncount);
+                        Console.WriteLine("\nThese are every 50th value from the list:\n");
+
+                        for (int i = 0; i < selectionsortedroads.Length; i += 50)
+                        {
+                            Console.Write(selectionsortedroads[i] + ", ");
+                            Thread.Sleep(1);
+                        }
                     }
                     else if (user_input == "3")
                     {
@@ -734,6 +928,13 @@ class Program
                             Thread.Sleep(1);
                         }
                         Console.WriteLine("The amount of steps taken for Insertion sort is: " + Insertionsort.insertioncount);
+                        Console.WriteLine("\nThese are every 50th value from the list:\n");
+
+                        for (int i = 0; i < insertionsortedroads.Length; i += 50)
+                        {
+                            Console.Write(insertionsortedroads[i] + ", ");
+                            Thread.Sleep(1);
+                        }
                     }
                     else if (user_input == "4")
                     {
@@ -749,6 +950,13 @@ class Program
                             Thread.Sleep(1);
                         }
                         Console.WriteLine("The amount of steps taken for Quicksort sort is: " + Quicksort.quickcount);
+                        Console.WriteLine("\nThese are every 50th value from the list:\n");
+
+                        for (int i = 0; i < quicksortedroads.Length; i += 50)
+                        {
+                            Console.Write(quicksortedroads[i] + ", ");
+                            Thread.Sleep(1);
+                        }
                     }
                     else if (user_input == "5")
                     {
@@ -785,6 +993,13 @@ class Program
                             Thread.Sleep(1);
                         }
                         Console.WriteLine("The amount of steps taken for reverse bubble sort is: " + reversebubblesort.reversebubblecount);
+                        Console.WriteLine("\nThese are every 50th value from the list:\n");
+
+                        for (int i = 0; i < reversebubblesortedroads.Length - 1; i += 50)
+                        {
+                            Console.Write(reversebubblesortedroads[i] + ", ");
+                            Thread.Sleep(1);
+                        }
                     }
                     else if (reverseuser_input == "2")
                     {
@@ -802,6 +1017,13 @@ class Program
                             Thread.Sleep(1);
                         }
                         Console.WriteLine("The amount of steps taken for reverse selection sort is: " + reverseselectionsort.reverseselectioncount);
+                        Console.WriteLine("\nThese are every 50th value from the list:\n");
+
+                        for (int i = 0; i < reverseselectionsortedroads.Length - 1; i += 50)
+                        {
+                            Console.Write(reverseselectionsortedroads[i] + ", ");
+                            Thread.Sleep(1);
+                        }
                     }
                     else if (reverseuser_input == "3")
                     {
@@ -817,6 +1039,13 @@ class Program
                             Thread.Sleep(1);
                         }
                         Console.WriteLine("The amount of steps taken for Reverse Insertion sort is: " + Reverseinsertionsort.reverseinsertioncount);
+                        Console.WriteLine("\nThese are every 50th value from the list:\n");
+
+                        for (int i = 0; i < reverseinsertionsortedroads.Length - 1; i += 50)
+                        {
+                            Console.Write(reverseinsertionsortedroads[i] + ", ");
+                            Thread.Sleep(1);
+                        }
                     }
                     else if (reverseuser_input == "4")
                     {
@@ -832,6 +1061,13 @@ class Program
                             Thread.Sleep(1);
                         }
                         Console.WriteLine("The amount of steps taken for Reverse Quicksort sort is: " + reversequicksort.reversequickcount);
+                        Console.WriteLine("\nThese are every 50th value from the list:\n");
+
+                        for (int i = 0; i < reversequicksortedroads.Length - 1; i += 50)
+                        {
+                            Console.Write(reversequicksortedroads[i] + ", ");
+                            Thread.Sleep(1);
+                        }
                     }
                     else if (reverseuser_input == "5")
                     {
@@ -912,6 +1148,13 @@ class Program
                         }
 
                         Console.WriteLine("The amount of steps taken for Bubble sort is: " + bubblesort.bubblecount);
+                        Console.WriteLine("\nThese are every 50th value from the list:\n");
+
+                        for (int i = 0; i < bubblesortedroads.Length; i += 50)
+                        {
+                            Console.Write(bubblesortedroads[i] + ", ");
+                            Thread.Sleep(1);
+                        }
                     }
 
 
@@ -931,6 +1174,13 @@ class Program
                             Thread.Sleep(1);
                         }
                         Console.WriteLine("The amount of steps taken for selection sort is: " + Selectionsort.selectioncount);
+                        Console.WriteLine("\nThese are every 50th value from the list:\n");
+
+                        for (int i = 0; i < selectionsortedroads.Length; i += 50)
+                        {
+                            Console.Write(selectionsortedroads[i] + ", ");
+                            Thread.Sleep(1);
+                        }
                     }
                     else if (user_input == "3")
                     {
@@ -946,6 +1196,13 @@ class Program
                             Thread.Sleep(1);
                         }
                         Console.WriteLine("The amount of steps taken for Insertion sort is: " + Insertionsort.insertioncount);
+                        Console.WriteLine("\nThese are every 50th value from the list:\n");
+
+                        for (int i = 0; i < insertionsortedroads.Length; i += 50)
+                        {
+                            Console.Write(insertionsortedroads[i] + ", ");
+                            Thread.Sleep(1);
+                        }
                     }
                     else if (user_input == "4")
                     {
@@ -960,8 +1217,15 @@ class Program
                             Console.Write(road + ", ");
                             Thread.Sleep(1);
                         }
- 
+
                         Console.WriteLine("The amount of steps taken for Quicksort sort is: " + Quicksort.quickcount);
+                        Console.WriteLine("\nThese are every 50th value from the list:\n");
+
+                        for (int i = 0; i < quicksortedroads.Length; i += 50)
+                        {
+                            Console.Write(quicksortedroads[i] + ", ");
+                            Thread.Sleep(1);
+                        }
                     }
                     else if (user_input == "5")
                     {
@@ -998,6 +1262,13 @@ class Program
                             Thread.Sleep(1);
                         }
                         Console.WriteLine("The amount of steps taken for reverse bubble sort is: " + reversebubblesort.reversebubblecount);
+                        Console.WriteLine("\nThese are every 50th value from the list:\n");
+
+                        for (int i = 0; i < reversebubblesortedroads.Length - 1; i += 50)
+                        {
+                            Console.Write(reversebubblesortedroads[i] + ", ");
+                            Thread.Sleep(1);
+                        }
                     }
                     else if (reverseuser_input == "2")
                     {
@@ -1015,6 +1286,13 @@ class Program
                             Thread.Sleep(1);
                         }
                         Console.WriteLine("The amount of steps taken for reverse selection sort is: " + reverseselectionsort.reverseselectioncount);
+                        Console.WriteLine("\nThese are every 50th value from the list:\n");
+
+                        for (int i = 0; i < reverseselectionsortedroads.Length - 1; i += 50)
+                        {
+                            Console.Write(reverseselectionsortedroads[i] + ", ");
+                            Thread.Sleep(1);
+                        }
                     }
                     else if (reverseuser_input == "3")
                     {
@@ -1030,6 +1308,13 @@ class Program
                             Thread.Sleep(1);
                         }
                         Console.WriteLine("The amount of steps taken for Reverse Insertion sort is: " + Reverseinsertionsort.reverseinsertioncount);
+                        Console.WriteLine("\nThese are every 50th value from the list:\n");
+
+                        for (int i = 0; i < reverseinsertionsortedroads.Length - 1; i += 50)
+                        {
+                            Console.Write(reverseinsertionsortedroads[i] + ", ");
+                            Thread.Sleep(1);
+                        }
                     }
                     else if (reverseuser_input == "4")
                     {
@@ -1045,6 +1330,13 @@ class Program
                             Thread.Sleep(1);
                         }
                         Console.WriteLine("The amount of steps taken for Reverse Quicksort sort is: " + reversequicksort.reversequickcount);
+                        Console.WriteLine("\nThese are every 50th value from the list:\n");
+
+                        for (int i = 0; i < reversequicksortedroads.Length - 1; i += 50)
+                        {
+                            Console.Write(reversequicksortedroads[i] + ", ");
+                            Thread.Sleep(1);
+                        }
                     }
                     else if (reverseuser_input == "5")
                     {
@@ -1124,6 +1416,13 @@ class Program
                             Thread.Sleep(1);
                         }
                         Console.WriteLine("The amount of steps taken for Bubble sort is: " + bubblesort.bubblecount);
+                        Console.WriteLine("\nThese are every 50th value from the list:\n");
+
+                        for (int i = 0; i < bubblesortedroads.Length; i += 50)
+                        {
+                            Console.Write(bubblesortedroads[i] + ", ");
+                            Thread.Sleep(1);
+                        }
                     }
 
 
@@ -1143,6 +1442,13 @@ class Program
                             Thread.Sleep(1);
                         }
                         Console.WriteLine("The amount of steps taken for selection sort is: " + Selectionsort.selectioncount);
+                        Console.WriteLine("\nThese are every 50th value from the list:\n");
+
+                        for (int i = 0; i < selectionsortedroads.Length; i += 50)
+                        {
+                            Console.Write(selectionsortedroads[i] + ", ");
+                            Thread.Sleep(1);
+                        }
                     }
                     else if (user_input == "3")
                     {
@@ -1158,6 +1464,13 @@ class Program
                             Thread.Sleep(1);
                         }
                         Console.WriteLine("The amount of steps taken for Insertion sort is: " + Insertionsort.insertioncount);
+                        Console.WriteLine("\nThese are every 50th value from the list:\n");
+
+                        for (int i = 0; i < insertionsortedroads.Length; i += 50)
+                        {
+                            Console.Write(insertionsortedroads[i] + ", ");
+                            Thread.Sleep(1);
+                        }
                     }
                     else if (user_input == "4")
                     {
@@ -1173,6 +1486,13 @@ class Program
                             Thread.Sleep(1);
                         }
                         Console.WriteLine("The amount of steps taken for Quicksort sort is: " + Quicksort.quickcount);
+                        Console.WriteLine("\nThese are every 50th value from the list:\n");
+
+                        for (int i = 0; i < quicksortedroads.Length; i += 50)
+                        {
+                            Console.Write(quicksortedroads[i] + ", ");
+                            Thread.Sleep(1);
+                        }
                     }
                     else if (user_input == "5")
                     {
@@ -1209,6 +1529,13 @@ class Program
                             Thread.Sleep(1);
                         }
                         Console.WriteLine("The amount of steps taken for reverse bubble sort is: " + reversebubblesort.reversebubblecount);
+                        Console.WriteLine("\nThese are every 50th value from the list:\n");
+
+                        for (int i = 0; i < reversebubblesortedroads.Length - 1; i += 50)
+                        {
+                            Console.Write(reversebubblesortedroads[i] + ", ");
+                            Thread.Sleep(1);
+                        }
                     }
                     else if (reverseuser_input == "2")
                     {
@@ -1226,6 +1553,13 @@ class Program
                             Thread.Sleep(1);
                         }
                         Console.WriteLine("The amount of steps taken for reverse selection sort is: " + reverseselectionsort.reverseselectioncount);
+                        Console.WriteLine("\nThese are every 50th value from the list:\n");
+
+                        for (int i = 0; i < reverseselectionsortedroads.Length - 1; i += 50)
+                        {
+                            Console.Write(reverseselectionsortedroads[i] + ", ");
+                            Thread.Sleep(1);
+                        }
                     }
                     else if (reverseuser_input == "3")
                     {
@@ -1241,6 +1575,13 @@ class Program
                             Thread.Sleep(1);
                         }
                         Console.WriteLine("The amount of steps taken for Reverse Insertion sort is: " + Reverseinsertionsort.reverseinsertioncount);
+                        Console.WriteLine("\nThese are every 50th value from the list:\n");
+
+                        for (int i = 0; i < reverseinsertionsortedroads.Length - 1; i += 50)
+                        {
+                            Console.Write(reverseinsertionsortedroads[i] + ", ");
+                            Thread.Sleep(1);
+                        }
                     }
                     else if (reverseuser_input == "4")
                     {
@@ -1256,6 +1597,13 @@ class Program
                             Thread.Sleep(1);
                         }
                         Console.WriteLine("The amount of steps taken for Reverse Quicksort sort is: " + reversequicksort.reversequickcount);
+                        Console.WriteLine("\nThese are every 50th value from the list:\n");
+
+                        for (int i = 0; i < reversequicksortedroads.Length - 1; i += 50)
+                        {
+                            Console.Write(reversequicksortedroads[i] + ", ");
+                            Thread.Sleep(1);
+                        }
                     }
                     else if (reverseuser_input == "5")
                     {
@@ -1318,10 +1666,11 @@ class Program
             {
                 throw new ArgumentOutOfRangeException("Selection not part of the available selection\n");
             }
+                Console.ReadKey();
+            }
+
             Console.ReadKey();
         }
-
-        Console.ReadKey();
     }
-}
+
 

@@ -18,6 +18,7 @@ namespace Algorithms_Assessment1
 						list[j + 1] = list[j];
 						j--;
 						list[j + 1] = value;
+						//insertioncount++;
 					}
 					else flag = 1;
 				}
