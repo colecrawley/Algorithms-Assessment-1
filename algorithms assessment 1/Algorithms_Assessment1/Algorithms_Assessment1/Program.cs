@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net.NetworkInformation;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Algorithms_Assessment1;
@@ -6,12 +7,12 @@ class Program
 {
     static void Main(string[] args)
     {
-        string[] roads_1 = System.IO.File.ReadAllLines(@"/Users/colecrawley/Documents/algorithms assessment 1/roads/Road_1_256.txt");
-        string[] roads_2 = System.IO.File.ReadAllLines(@"/Users/colecrawley/Documents/algorithms assessment 1/roads/Road_2_256.txt");
-        string[] roads_3 = System.IO.File.ReadAllLines(@"/Users/colecrawley/Documents/algorithms assessment 1/roads/Road_3_256.txt");
-        string[] roads_4 = System.IO.File.ReadAllLines(@"/Users/colecrawley/Documents/algorithms assessment 1/roads/Road_1_2048.txt");
-        string[] roads_5 = System.IO.File.ReadAllLines(@"/Users/colecrawley/Documents/algorithms assessment 1/roads/Road_2_2048.txt");
-        string[] roads_6 = System.IO.File.ReadAllLines(@"/Users/colecrawley/Documents/algorithms assessment 1/roads/Road_3_2048.txt");
+        string[] roads_1 = System.IO.File.ReadAllLines("Road_1_256.txt");
+        string[] roads_2 = System.IO.File.ReadAllLines("Road_2_256.txt");
+        string[] roads_3 = System.IO.File.ReadAllLines("Road_3_256.txt");
+        string[] roads_4 = System.IO.File.ReadAllLines("Road_1_2048.txt");
+        string[] roads_5 = System.IO.File.ReadAllLines("Road_2_2048.txt");
+        string[] roads_6 = System.IO.File.ReadAllLines("Road_3_2048.txt");
         //Console.WriteLine("These are all road codes\n");
 
         int[] roadnums_1 = Array.ConvertAll(roads_1, int.Parse);
