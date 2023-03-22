@@ -1,4 +1,5 @@
-﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+﻿using System;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Algorithms_Assessment1;
 class Program
@@ -19,16 +20,6 @@ class Program
         int[] roadnums_4 = Array.ConvertAll(roads_4, int.Parse);
         int[] roadnums_5 = Array.ConvertAll(roads_5, int.Parse);
         int[] roadnums_6 = Array.ConvertAll(roads_6, int.Parse);
-
-
-
-        /*foreach (int item in roadnums_4)
-        {
-            Console.Write(item + ", ");
-            
-            
-        }
-        Console.ReadKey();*/
 
 
         int flag = 1;
@@ -283,7 +274,7 @@ class Program
                         string input = Console.ReadLine();
                         int num_input = Int32.Parse(input);
 
-                        Console.WriteLine(binarysearch.Binarysearch(roadnums_1, num_input));
+                        Console.WriteLine("\nThe indexed location of your number is: " + binarysearch.Binarysearch(roadnums_1, num_input) + "\n");
                     }
                     else if (search_algo == "2")
                     {
@@ -292,17 +283,10 @@ class Program
                         Console.WriteLine("What value do you want to look for: ");
                         string input = Console.ReadLine();
                         int num_input = Int32.Parse(input);
-                        //int[] duplicates = linearsearch.Findduplicates(roadnums_1, num_input);
 
-                        Console.WriteLine("The indexed location of your number is: " + linearsearch.Linearsearch(roadnums_1, num_input));
+                        Console.WriteLine("\nThe indexed location of your number is: " + linearsearch.Linearsearch(roadnums_1, num_input) + "\n");
 
-                        /*foreach (var item in duplicates)
-                        {
-                            Console.WriteLine(item);
-                            Thread.Sleep(10);
-                        }*/
-
-                        //Console.WriteLine(linearsearch.Findduplicates(roadnums_1, num_input));
+                        Console.WriteLine("\nThese are all the other locations in the list where " + num_input + " appears:\n");
                         linearsearch.Findduplicates(roadnums_1, num_input);
                     }
                 }
@@ -561,7 +545,7 @@ class Program
                         string input = Console.ReadLine();
                         int num_input = Int32.Parse(input);
 
-                        Console.WriteLine(binarysearch.Binarysearch(roadnums_2, num_input));
+                        Console.WriteLine("\nThe indexed location of your number is: " + binarysearch.Binarysearch(roadnums_2, num_input) + "\n");
                     }
                     else if (search_algo == "2")
                     {
@@ -571,7 +555,10 @@ class Program
                         string input = Console.ReadLine();
                         int num_input = Int32.Parse(input);
 
-                        Console.WriteLine(linearsearch.Linearsearch(roadnums_2, num_input));
+                        Console.WriteLine("\nThe indexed location of your number is: " + linearsearch.Linearsearch(roadnums_2, num_input) + "\n");
+
+                        Console.WriteLine("\nThese are all the other locations in the list where " + num_input + " appears:\n");
+                        linearsearch.Findduplicates(roadnums_2, num_input);
                     }
                 }
                 else if (answer == "4") // Exit
@@ -829,7 +816,7 @@ class Program
                         string input = Console.ReadLine();
                         int num_input = Int32.Parse(input);
 
-                        Console.WriteLine(binarysearch.Binarysearch(roadnums_3, num_input));
+                        Console.WriteLine("\nThe indexed location of your number is: " + binarysearch.Binarysearch(roadnums_3, num_input) + "\n");
                     }
                     else if (search_algo == "2")
                     {
@@ -839,7 +826,10 @@ class Program
                         string input = Console.ReadLine();
                         int num_input = Int32.Parse(input);
 
-                        Console.WriteLine(linearsearch.Linearsearch(roadnums_3, num_input));
+                        Console.WriteLine("\nThe indexed location of your number is: " + linearsearch.Linearsearch(roadnums_3, num_input) + "\n");
+
+                        Console.WriteLine("\nThese are all the other locations in the list where " + num_input + " appears:\n");
+                        linearsearch.Findduplicates(roadnums_3, num_input);
                     }
                 }
                 else if (answer == "4") // Exit
@@ -1096,7 +1086,7 @@ class Program
                         string input = Console.ReadLine();
                         int num_input = Int32.Parse(input);
 
-                        Console.WriteLine(binarysearch.Binarysearch(roadnums_4, num_input));
+                        Console.WriteLine("\nThe indexed location of your number is: " + binarysearch.Binarysearch(roadnums_4, num_input) + "\n");
                     }
                     else if (search_algo == "2")
                     {
@@ -1106,7 +1096,10 @@ class Program
                         string input = Console.ReadLine();
                         int num_input = Int32.Parse(input);
 
-                        Console.WriteLine(linearsearch.Linearsearch(roadnums_4, num_input));
+                        Console.WriteLine("\nThe indexed location of your number is: " + linearsearch.Linearsearch(roadnums_4, num_input) + "\n");
+
+                        Console.WriteLine("\nThese are all the other locations in the list where " + num_input + " appears:\n");
+                        linearsearch.Findduplicates(roadnums_4, num_input);
                     }
                 }
                 else if (answer == "4") // Exit
@@ -1365,7 +1358,7 @@ class Program
                         string input = Console.ReadLine();
                         int num_input = Int32.Parse(input);
 
-                        Console.WriteLine(binarysearch.Binarysearch(roadnums_5, num_input));
+                        Console.WriteLine("\nThe indexed location of your number is: " + binarysearch.Binarysearch(roadnums_5, num_input) + "\n");
                     }
                     else if (search_algo == "2")
                     {
@@ -1375,7 +1368,10 @@ class Program
                         string input = Console.ReadLine();
                         int num_input = Int32.Parse(input);
 
-                        Console.WriteLine(linearsearch.Linearsearch(roadnums_5, num_input));
+                        Console.WriteLine("\nThe indexed location of your number is: " + linearsearch.Linearsearch(roadnums_5, num_input) + "\n");
+
+                        Console.WriteLine("\nThese are all the other locations in the list where " + num_input + " appears:\n");
+                        linearsearch.Findduplicates(roadnums_5, num_input);
                     }
                 }
                 else if (answer == "4") // Exit
@@ -1632,7 +1628,7 @@ class Program
                         string input = Console.ReadLine();
                         int num_input = Int32.Parse(input);
 
-                        Console.WriteLine(binarysearch.Binarysearch(roadnums_6, num_input));
+                        Console.WriteLine("\nThe indexed location of your number is: " + binarysearch.Binarysearch(roadnums_6, num_input) + "\n");
                     }
                     else if (search_algo == "2")
                     {
@@ -1642,7 +1638,10 @@ class Program
                         string input = Console.ReadLine();
                         int num_input = Int32.Parse(input);
 
-                        Console.WriteLine(linearsearch.Linearsearch(roadnums_6, num_input));
+                        Console.WriteLine("\nThe indexed location of your number is: " + linearsearch.Linearsearch(roadnums_6, num_input) + "\n");
+
+                        Console.WriteLine("\nThese are all the other locations in the list where " + num_input + " appears:\n");
+                        linearsearch.Findduplicates(roadnums_6, num_input);
                     }
                 }
                 else if (answer == "4") // Exit
