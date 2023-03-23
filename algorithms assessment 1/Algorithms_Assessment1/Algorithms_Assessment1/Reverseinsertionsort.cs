@@ -8,21 +8,20 @@ namespace Algorithms_Assessment1
         {
             for (int i = 1; i < length; i++)
             {
-                var value = list[i];
+                var value = list[i]; //gets a key and stores it in variable
                 var flag = 0;
 
                 for (int j = i - 1; j >= 0 && flag != 1;)
                 {
                     if (value > list[j])
                     {
-                        list[j + 1] = list[j];
+                        list[j + 1] = list[j]; //if value bigger than key, stores it left, else, stores it right
                         j--;
                         list[j + 1] = value;
-                        //insertioncount++;
                     }
                     else flag = 1;
                 }
-                reverseinsertioncount++;
+                reverseinsertioncount++; //reverse counter
             }
             Console.WriteLine("The amount of steps taken for Reverse Insertion sort is: " + reverseinsertioncount);
             return list;

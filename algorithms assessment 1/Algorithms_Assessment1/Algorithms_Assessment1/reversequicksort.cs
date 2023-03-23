@@ -8,7 +8,7 @@ namespace Algorithms_Assessment1
         {
             var i = left;
             var j = right;
-            var middle = list[left];
+            var middle = list[left]; //pivot on the left
 
             while (i <= j)
             {
@@ -32,14 +32,14 @@ namespace Algorithms_Assessment1
             }
             if (left < j)
             {
-                reversequickcount++;
+                reversequickcount++; //reverse quick counter
                 Reversequicksort(list, left, j);
             }
 
             if (i < right)
             {
                 reversequickcount++;
-                Reversequicksort(list, i, right);
+                Reversequicksort(list, i, right); //keeps dividing until each item has its own subclass, in reverse
             }
             return list;
 

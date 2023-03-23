@@ -11,11 +11,11 @@ namespace Algorithms_Assessment1
 
             for (int i = 0; i < n - 1; i++)
             {
-                var minimum = i;
+                var minimum = i; //gets minimum value
 
                 for (int j = i + 1; j < n; j++)
                 {
-                    if (Roadarray[j] > Roadarray[minimum])
+                    if (Roadarray[j] > Roadarray[minimum]) //places it at the end of the list
                     {
                         minimum = j;
                     }

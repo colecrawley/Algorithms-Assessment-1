@@ -8,7 +8,7 @@ namespace Algorithms_Assessment1
 		{
 			var i = left;
 			var j = right;
-			var middle = list[left];
+			var middle = list[left]; //splits the list into two, right side contains the pivot
 
 			while (i <= j)
 			{
@@ -30,7 +30,7 @@ namespace Algorithms_Assessment1
 					j--;
                 }
 			}
-			if (left < j)
+			if (left < j) // keeps dividing lists until each item in the list has its own subclass, now in order
 			{
                 quickcount++;
                 quicksort(list, left, j);

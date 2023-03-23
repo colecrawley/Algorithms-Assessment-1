@@ -7,7 +7,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Testing.testing();
+        Testing.testing(); // calling the main program to run here
     }
 }
 
